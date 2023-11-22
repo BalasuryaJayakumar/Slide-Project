@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lobster&family=Nunito&display=swap');
+/*   
+https://www.youtube.com/results?search_query=resume+format+in+tamil
+*/
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+button {
+  font: inherit;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(1rem, 2.7vh, 1.5rem);
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.figure_container {
+  width: 80vw;
+  height: 50vh;
+  border: 5px solid dodgerblue;
+  margin: 1rem auto;
+  margin-top: 3rem;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  background-color: rgb(83, 187, 247);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  transition: all 0.25s ease-in-out;
+}
+
+h1 {
+  color: white;
+  font-size: clamp(2.25rem, 4vh, 2.75rem);
+  text-shadow: 3px 3px 8px #000;
+}
+
+.abs_h1 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+}
+
+.bg_image {
+  width: 80vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.slide:nth-child(3) {
+  background: no-repeat url("./img/043615107b62c2096050998be55590bf.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.profile_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.profile_name {
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.btn_container {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  color: dodgerblue;
+}
+
+.btn:hover, .btn:focus-visible {
+  cursor: pointer;
+  border: 1px solid dodgerblue;
+  background-color: rgb(119, 202, 251);
+  color: white;
+  border-radius: 5px;
+}
+
+.btn_container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .figure_container {
+    height: 60vh;
+  }
+
+  .bg_image {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .figure_container {
+    height: 70vh;
+  }
+
+  .bg_image {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .figure_container {
+    height: 75vh;
+  }
+
+  .bg_image {
+    height: 75vh;
+  }
+}
